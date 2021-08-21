@@ -1,0 +1,34 @@
+{
+    "name": "ezadev/summernote",
+    "description": "Summernote extension for ezadev-admin",
+    "type": "library",
+    "keywords": ["ezadev-admin", "extension", "editor"],
+    "homepage": "https://github.com/ezadev/summernote",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khairu Aqsara",
+            "email": "wenkhairu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ezadev/admin": "~0.6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ezadev\\Summernote\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ezadev\\Summernote\\SummernoteServiceProvider"
+            ]
+
+        }
+    }
+}
